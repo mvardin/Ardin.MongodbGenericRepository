@@ -10,7 +10,7 @@ namespace Ardin.MongodbGenericRepository
     {
         private readonly IMongoCollection<TDocument> _collection;
 
-        public MongoRepository(IConfiguration configuration)
+        public MongoRepository()
         {
             IConfigurationBuilder builder = new ConfigurationBuilder();
             builder.AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json"));

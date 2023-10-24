@@ -4,6 +4,15 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Company>Ardin.in</Company>
+    <Description>use this nuget for having mongodb generic repository</Description>
+    <Copyright></Copyright>
+    <PackageProjectUrl>https://github.com/mvardin/Ardin.MongodbGenericRepository</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mvardin/Ardin.MongodbGenericRepository</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>mongodb , generic reposiroty , Ardin</PackageTags>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
