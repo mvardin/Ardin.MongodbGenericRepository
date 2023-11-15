@@ -1,7 +1,8 @@
-﻿using MongoDB.Driver;
+﻿using Gridify;
+using MongoDB.Driver;
 using System.Linq.Expressions;
 
-namespace Ardin.MongodbGenericRepository
+namespace Ardin.MongodbGenericRepositoryWithGridify
 {
     public interface IMongoRepository<TDocument> where TDocument : IDocument
     {
@@ -55,5 +56,7 @@ namespace Ardin.MongodbGenericRepository
         Task DeleteManyAsync(Expression<Func<TDocument, bool>> filterExpression);
 
         void FindOneAndDelete(Expression<Func<TDocument, bool>> filterExpression);
+
+        List<TDocument> GetWithGridify(GridifyQuery model);
     }
 }

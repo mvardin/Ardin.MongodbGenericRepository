@@ -1,9 +1,10 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Gridify;
+using Microsoft.Extensions.Configuration;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using System.Linq.Expressions;
 
-namespace Ardin.MongodbGenericRepository
+namespace Ardin.MongodbGenericRepositoryWithGridify
 {
     public class MongoRepository<TDocument> : IMongoRepository<TDocument>
     where TDocument : IDocument
@@ -167,6 +168,15 @@ namespace Ardin.MongodbGenericRepository
         public virtual void FindOneAndDelete(Expression<Func<TDocument, bool>> filterExpression)
         {
             _collection.FindOneAndDelete(filterExpression);
+        }
+
+        public List<TDocument> GetWithGridify(GridifyQuery model)
+        {
+            if (model.Page == -1)
+                return _collection.AsQueryable().OrderByDescending(c => c.CreatedAt).ToList();
+
+            else
+                return _collection.AsQueryable().Gridify(model).Data.OrderByDescending(c => c.CreatedAt).ToList();
         }
     }
 }

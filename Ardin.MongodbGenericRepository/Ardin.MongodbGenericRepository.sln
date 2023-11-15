@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ardin.MongodbGenericReposit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp", "SampleApp\SampleApp.csproj", "{4317AACF-2FB6-43E8-A20C-1654B52ABF23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ardin.MongodbGenericRepositoryWithGridify", "Ardin.MongodbGenericRepositoryWithGridify\Ardin.MongodbGenericRepositoryWithGridify.csproj", "{EEACB0E7-EB08-4F8C-A2A3-B206321C4756}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4317AACF-2FB6-43E8-A20C-1654B52ABF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4317AACF-2FB6-43E8-A20C-1654B52ABF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4317AACF-2FB6-43E8-A20C-1654B52ABF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEACB0E7-EB08-4F8C-A2A3-B206321C4756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEACB0E7-EB08-4F8C-A2A3-B206321C4756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEACB0E7-EB08-4F8C-A2A3-B206321C4756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEACB0E7-EB08-4F8C-A2A3-B206321C4756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 
-namespace Ardin.MongodbGenericRepository
+namespace Ardin.MongodbGenericRepositoryWithGridify
 {
     public interface IDocument
     {

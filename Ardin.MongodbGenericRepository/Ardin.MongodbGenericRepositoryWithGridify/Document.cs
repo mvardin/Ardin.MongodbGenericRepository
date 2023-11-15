@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson;
 
-namespace Ardin.MongodbGenericRepository
+namespace Ardin.MongodbGenericRepositoryWithGridify
 {
     public abstract class Document : IDocument
     {
